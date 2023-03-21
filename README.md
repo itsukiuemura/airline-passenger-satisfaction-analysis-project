@@ -16,7 +16,7 @@ A CSV file was found from the Data Playground of [Maven Analytics](https://maven
 &nbsp;The descriptions of each column are written.
   
 ## Data processing
-###Steps
+### Steps
 1. **Data Import**<br>
 &nbsp;The CSV file was imported into SQL Server Management Studio 19
 2. **DB Design**<br>
