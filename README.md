@@ -7,25 +7,25 @@ Based on the transformed data, a report was created using Power BI.
 1. **Data Collection**<br>
 &nbsp;CSV files containing airline passenger satification scores were found from the Data Playground of [Maven Analytics](https://mavenanalytics.io/data-playground).
 &nbsp;- **airline_passenger_satisfaction.csv**<br>
-&nbsp;&nbsp;The number of records, which are passengers, is 129,880.
-&nbsp;&nbsp;Factors of customer satisfaction are following:
-&nbsp;&nbsp;1. Flight Distance
-&nbsp;&nbsp;2. Departure Delay
-&nbsp;&nbsp;3. Arrival Delay
-&nbsp;&nbsp;4. Departure and Arrival Time Convenience
-&nbsp;&nbsp;5. Ease of Online Booking
-&nbsp;&nbsp;6. Check-in Service
-&nbsp;&nbsp;7. Online Boarding
-&nbsp;&nbsp;8. Gate Location
-&nbsp;&nbsp;9. On-board Service
-&nbsp;&nbsp;10. Seat Comfort
-&nbsp;&nbsp;11. Leg Room Service
-&nbsp;&nbsp;12. Cleanliness
-&nbsp;&nbsp;13. Food and Drink
-&nbsp;&nbsp;14. In-flight Service
-&nbsp;&nbsp;15. In-flight Wifi Service
-&nbsp;&nbsp;16. In-flight Entertainment
-&nbsp;&nbsp;17. Baggage Handling
+&nbsp;&nbsp;The number of records, which are passengers, is 129,880.<br>
+&nbsp;&nbsp;Factors of customer satisfaction are following:<br>
+&nbsp;&nbsp;1. Flight Distance<br>
+&nbsp;&nbsp;2. Departure Delay<br>
+&nbsp;&nbsp;3. Arrival Delay<br>
+&nbsp;&nbsp;4. Departure and Arrival Time Convenience<br>
+&nbsp;&nbsp;5. Ease of Online Booking<br>
+&nbsp;&nbsp;6. Check-in Service<br>
+&nbsp;&nbsp;7. Online Boarding<br>
+&nbsp;&nbsp;8. Gate Location<br>
+&nbsp;&nbsp;9. On-board Service<br>
+&nbsp;&nbsp;10. Seat Comfort<br>
+&nbsp;&nbsp;11. Leg Room Service<br>
+&nbsp;&nbsp;12. Cleanliness<br>
+&nbsp;&nbsp;13. Food and Drink<br>
+&nbsp;&nbsp;14. In-flight Service<br>
+&nbsp;&nbsp;15. In-flight Wifi Service<br>
+&nbsp;&nbsp;16. In-flight Entertainment<br>
+&nbsp;&nbsp;17. Baggage Handling<br>
 &nbsp;- **data_dictionary.csv**<br>
 &nbsp;&nbsp;The descriptions of each column are written.
 &nbsp;The file **airline_passenger_satisfaction.csv** was imported into SQL Server Management Studio 19 for data transformation.
