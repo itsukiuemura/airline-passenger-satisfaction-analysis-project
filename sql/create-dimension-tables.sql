@@ -23,13 +23,6 @@ CREATE TABLE dbo.Class
 	CONSTRAINT unqClass UNIQUE (Class)
 )
 
-CREATE TABLE dbo.Satisfaction
-(
-	ID INT CONSTRAINT PK_Satisfaction PRIMARY KEY IDENTITY(1,1),
-	Satisfaction VARCHAR(30) NOT NULL,
-	CONSTRAINT unqSatisfaction UNIQUE (Satisfaction)
-)
-
 CREATE TABLE dbo.Gender
 (
 	ID INT CONSTRAINT PK_Gender PRIMARY KEY IDENTITY(1,1),
@@ -48,9 +41,6 @@ SELECT DISTINCT Type_of_Travel FROM dbo.PassengerSatisfaction
 
 INSERT INTO dbo.Class
 SELECT DISTINCT Class FROM dbo.PassengerSatisfaction
-
-INSERT INTO dbo.Satisfaction
-SELECT DISTINCT Satisfaction FROM dbo.PassengerSatisfaction
 
 INSERT INTO dbo.Gender
 SELECT DISTINCT Gender FROM dbo.PassengerSatisfaction
@@ -74,11 +64,6 @@ FROM Class
 WHERE PassengerSatisfaction.Class = Class.Class
 
 UPDATE PassengerSatisfaction
-SET PassengerSatisfaction.Satisfaction = Satisfaction.ID
-FROM Satisfaction
-WHERE PassengerSatisfaction.Satisfaction = Satisfaction.Satisfaction
-
-UPDATE PassengerSatisfaction
 SET PassengerSatisfaction.Gender = Gender.ID
 FROM Gender
 WHERE PassengerSatisfaction.Gender = Gender.Gender
@@ -86,12 +71,10 @@ WHERE PassengerSatisfaction.Gender = Gender.Gender
 ALTER TABLE PassengerSatisfaction ALTER COLUMN Customer_Type INT NULL
 ALTER TABLE PassengerSatisfaction ALTER COLUMN Type_of_Travel INT NULL
 ALTER TABLE PassengerSatisfaction ALTER COLUMN Class INT NULL
-ALTER TABLE PassengerSatisfaction ALTER COLUMN Satisfaction INT NULL
 ALTER TABLE PassengerSatisfaction ALTER COLUMN Gender INT NULL
 
 ALTER TABLE PassengerSatisfaction
 ADD CONSTRAINT FK_CustomerType_ID FOREIGN KEY (Customer_Type) REFERENCES CustomerType(ID),
 CONSTRAINT FK_TypeOfTravel_ID FOREIGN KEY (Type_of_Travel) REFERENCES TypeOfTravel(ID),
 CONSTRAINT FK_Class_ID FOREIGN KEY (Class) REFERENCES Class(ID),
-CONSTRAINT FK_Satisfaction_ID FOREIGN KEY (Satisfaction) REFERENCES Satisfaction(ID),
 CONSTRAINT FK_Gender_ID FOREIGN KEY (Gender) REFERENCES Gender(ID)
