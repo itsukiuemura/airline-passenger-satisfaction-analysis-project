@@ -18,7 +18,7 @@ Please refer to **create-dimension-tables.sql** script for details.
 The data was cleansed by replacing missing values, such as NULLs and not applicable values, with meaningful values.
 Please refer to **cleanse-fact-table-data.sql** script for details.
 6. **Data Transformation**<br>
-TFact tables were created from the original table to display radar charts.
+Fact tables were created from the original table to display radar charts.
 Please refer to **create-dimension-tables-for-radar-charts.sql** script for details.
 8. **Report**<br>
 The transformed data was imported into Power BI, and a report was designed and created to provide a visual presentation of the data.
