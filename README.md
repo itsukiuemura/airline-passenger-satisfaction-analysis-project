@@ -6,9 +6,9 @@ Based on the transformed data, a report was created using Power BI.
 ### Steps
 1. **Data Collection**<br>
 Two CSV files containing airline passenger satification scores were obtained from the Data Playground of [Maven Analytics](https://mavenanalytics.io/data-playground).
-  - **airline_passenger_satisfaction.csv**<br>
+  1. **airline_passenger_satisfaction.csv**<br>
   The file contains 129,880 records, each representing a passenger.<br>
-  - **data_dictionary.csv**<br>
+  2. **data_dictionary.csv**<br>
   The file provides descriptions of each column.
   The file **airline_passenger_satisfaction.csv** was then imported into SQL Server Management Studio 19 for data transformation.
 2. **Database Design**<br>
