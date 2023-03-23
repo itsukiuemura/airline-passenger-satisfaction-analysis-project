@@ -27,7 +27,7 @@ CREATE TABLE dbo.Gender
 (
 	ID INT CONSTRAINT PK_Gender PRIMARY KEY IDENTITY(1,1),
 	Gender VARCHAR(10) NOT NULL,
-	CONSTRAINT unqGender UNIQUE (ID, Gender)
+	CONSTRAINT unqGender UNIQUE (Gender)
 )
 
 -- ********************************************************************
